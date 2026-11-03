@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epubfix"
+version = "0.1.0"
+description = "EPUB fine-typesetting (精排) toolkit: structural repair + Chinese typography rebuild"
+requires-python = ">=3.10"
+dependencies = ["lxml>=5.0"]
+
+[project.scripts]
+epubfix = "epubfix.cli:main"
+
+[project.gui-scripts]
+epubfix-gui = "epubfix.gui:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

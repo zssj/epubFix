@@ -1,0 +1,28 @@
+# 样书与原书（不随仓库分发）
+*.epub
+/郭则沄-红楼真梦.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# epubfix output
+out/
+reports/
+*.epubfix.epub
+*.report.html
+*.report.json
+
+# editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
